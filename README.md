@@ -10,14 +10,25 @@ Note that you can also use [Elastic Cloud](https://www.elastic.co/cloud/) or [Bo
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/) installed
 
-### Setting up the ELK Stack
+### Single Node cluster
+
+1. Clone the repo and navigate to the project directory
+2. Then, you can create the single node cluster using the command:
+
+```bash
+docker compose -f compose-single-node.yml up -d
+```
+
+Then you need to wait few minutes for the cluster to be ready
+
+### Multi-Node cluster
 
 1. Clone the repo and navigate to the project directory
 2. Once done, you need to create a custom `.env` file based on the `.env.example` file
-3. Then, you can create the elk cluster using the command:
+3. Then, you can create the elastic cluster using the command:
 
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
 Then you need to wait few minutes for the cluster to be ready
@@ -36,10 +47,10 @@ You can add sample data to Elasticsearch by:
 3. Click on `Other sample data sets` and then under Sample Web logs: `Add data`
 4. You should see the data in the `kibana_sample_data_logs` index
 
-### Stopping the ELK Stack
+### Stopping the cluster
 
-To stop and remove the ELK stack containers, run:
+To stop and remove the elastic cluster containers, run:
 
 ```bash
-docker-compose down
+docker compose down
 ```
