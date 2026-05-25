@@ -1,4 +1,4 @@
-## ELK Local Playground
+## Elastic cluster compose
 
 This repository contains a simple setup to run an Elasticsearch cluster with Kibana using Docker Compose.
 
@@ -12,12 +12,7 @@ Note that you can also use [Elastic Cloud](https://www.elastic.co/cloud/) or [Bo
 
 ### Setting up the ELK Stack
 
-1. Clone the repo:
-
-```bash
-git clone https://github.com/homelab-2025/elk-local-playground.git
-```
-
+1. Clone the repo and navigate to the project directory
 2. Once done, you need to create a custom `.env` file based on the `.env.example` file
 3. Then, you can create the elk cluster using the command:
 
